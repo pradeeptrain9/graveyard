@@ -54,3 +54,20 @@ button:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+/* --- Cemetery --- */
+.stone { cursor: pointer; outline: none; }
+.stone .stone-body { transition: filter 120ms ease; }
+.stone:hover .stone-body { filter: brightness(1.2); }
+.stone:focus-visible .stone-body,
+.stone.selected .stone-body { stroke: var(--color-accent); stroke-width: 2.5px; filter: brightness(1.15) drop-shadow(0 0 4px var(--color-accent)); }
+
+.fog { animation: fog-roll 22s ease-in-out infinite alternate; }
+.fog-front { animation-duration: 15s; animation-direction: alternate-reverse; }
+@keyframes fog-roll { from { transform: translateX(-36px); } to { transform: translateX(24px); } }
+
+.ghost { animation: ghost-bob 3.2s ease-in-out infinite; }
+@keyframes ghost-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem; list-style: none; margin: 0; padding: 0.8rem 0.25rem; font-size: 0.78rem; color: #b4b1cc; }
+.legend li { display: flex; align-items: center; gap: 0.35rem; }
