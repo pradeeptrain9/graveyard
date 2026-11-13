@@ -35,7 +35,7 @@
 *[Switch to terminal, paste and run]*
 
 ```
-npx graveyard exorcise f21f3e2090
+node engine/dist/cli.js exorcise f21f3e2090
 ```
 
 *[Terminal output: `[graveyard] exorcised f21f3e2090`]*
@@ -75,7 +75,7 @@ npx graveyard exorcise f21f3e2090
 
 *[Screen: browser showing live demo URL]*
 
-"Try it on your own repo: `npx graveyard scan .`, then drop the JSON on the site."
+"Try it on your own repo: `node engine/dist/cli.js scan .`, then drop the JSON on the site."
 
 **https://pradeeptrain9.github.io/graveyard/**
 **https://github.com/pradeeptrain9/graveyard**

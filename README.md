@@ -23,12 +23,23 @@ Kiroween 2026 entry, **Costume Contest** category. Built with [Kiro](https://kir
 
 ---
 
-## Install
+## Install & run
+
+`graveyard-engine` is not published to npm yet. Clone and build from source:
 
 ```bash
-npm install -g graveyard-engine
-# or use it directly with npx:
-npx graveyard scan .
+git clone https://github.com/pradeeptrain9/graveyard
+cd graveyard
+npm install
+npm run build --workspace=engine
+```
+
+Then scan a repo:
+
+```bash
+node engine/dist/cli.js scan /path/to/your/repo
+# or scan the current directory:
+node engine/dist/cli.js scan .
 ```
 
 **Requirements:** Node ≥ 20, git in PATH, a JS/TS repo.
@@ -41,17 +52,17 @@ npx graveyard scan .
 
 ```bash
 # Writes graveyard.json in the current directory
-graveyard scan .
+node engine/dist/cli.js scan .
 
 # Custom output path
-graveyard scan /path/to/repo -o /path/to/out.json
+node engine/dist/cli.js scan /path/to/repo -o /path/to/out.json
 ```
 
 ### Exorcise a grave
 
 ```bash
 # id comes from the Epitaph panel's "Copy" button, or from graveyard.json
-graveyard exorcise <id> [path]
+node engine/dist/cli.js exorcise <id> [path]
 ```
 
 This creates a branch `graveyard/exorcise-<id>`, removes the dead artifact, commits, and stops — it **never pushes**. Review the diff and open a PR yourself.
@@ -141,7 +152,7 @@ npm install
 # Build engine
 npm run build --workspace=engine
 
-# Run all tests
+# Run all tests (36 passing)
 npm test --workspace=engine
 
 # Start web dev server

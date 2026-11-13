@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "repo": "graveyard",
+  "headSha": "a614285d3f19ed09ce1866400f2e1947b9f3e0a1",
+  "headDate": "2026-11-13T12:20:26.000Z",
+  "scannedAt": "2026-11-13T12:28:48.226Z",
+  "graves": [
+    {
+      "id": "387ef802ae",
+      "kind": "export",
+      "path": "engine/src/exorcise.ts",
+      "name": "EXIT_UNKNOWN_ID",
+      "line": 7,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies EXIT_UNKNOWN_ID. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "8ed0ed8c15",
+      "kind": "export",
+      "path": "engine/src/exorcise.ts",
+      "name": "EXIT_UNSAFE_EDIT",
+      "line": 8,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies EXIT_UNSAFE_EDIT. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "66cd638fdc",
+      "kind": "file",
+      "path": "engine/src/gen-demo.ts",
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies engine/src/gen-demo.ts. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "1d04717505",
+      "kind": "export",
+      "path": "engine/src/git.ts",
+      "name": "BlameInfo",
+      "line": 188,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies BlameInfo. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "71513aaf87",
+      "kind": "export",
+      "path": "engine/src/git.ts",
+      "name": "GitError",
+      "line": 6,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies GitError. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "53f705899a",
+      "kind": "export",
+      "path": "engine/src/git.ts",
+      "name": "HeadInfo",
+      "line": 32,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies HeadInfo. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "998cd4b60b",
+      "kind": "export",
+      "path": "engine/src/haunted.ts",
+      "name": "CommitInfo",
+      "line": 3,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies CommitInfo. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "35922d04d6",
+      "kind": "export",
+      "path": "engine/src/knip.ts",
+      "name": "KnipRunError",
+      "line": 165,
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T12:19:48.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Task 4.1 real knip fixtures + dual-shape adaptKnip; submission docs (DEVPOST, BLOG, VIDEO, SOCIAL); 33 tests",
+      "epitaph": "Here lies KnipRunError. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Task 4.1 real knip fixtures + dual-shape adaptKnip; submission docs (DEVPOST, BLOG, VIDEO, SOCIAL); 33 tests\". Unvisited 0 days."
+    },
+    {
+      "id": "116ca059c4",
+      "kind": "file",
+      "path": "engine/src/mcp.ts",
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies engine/src/mcp.ts. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "c934a5a117",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "@modelcontextprotocol/sdk",
+      "born": "2026-11-13T11:09:25.000Z",
+      "lastTouched": "2026-11-13T11:09:25.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)",
+      "epitaph": "Here lies @modelcontextprotocol/sdk. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 1 engine — tasks 1-7 (schema, git, knip, build, cli, mcp, 25 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "8f6aaf3583",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "CELL_H",
+      "line": 9,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies CELL_H. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "06dbc55c06",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "CELL_W",
+      "line": 8,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies CELL_W. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "1a5ab352de",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "CemeteryLayout",
+      "line": 57,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies CemeteryLayout. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "d454b7ad78",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "COLS_PER_PLOT",
+      "line": 13,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies COLS_PER_PLOT. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "82e9b2e6b5",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "heightBucket",
+      "line": 18,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies heightBucket. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "b4106d7d88",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "HeightBucket",
+      "line": 15,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies HeightBucket. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "8e8a84b47d",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "PLOT_GAP",
+      "line": 11,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies PLOT_GAP. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "913249de95",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "PLOT_HEADER",
+      "line": 12,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies PLOT_HEADER. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "4f3638306e",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "PLOT_PAD",
+      "line": 10,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies PLOT_PAD. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "86fe56dffa",
+      "kind": "export",
+      "path": "web/src/layout.ts",
+      "name": "topLevelDir",
+      "line": 178,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies topLevelDir. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "8ccaf6534e",
+      "kind": "export",
+      "path": "web/src/types.ts",
+      "name": "GraveKind",
+      "line": 7,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies GraveKind. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "27e293be77",
+      "kind": "export",
+      "path": "web/src/types.ts",
+      "name": "schemaVersion",
+      "line": 5,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies schemaVersion. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    },
+    {
+      "id": "4428709dfe",
+      "kind": "export",
+      "path": "web/src/types.ts",
+      "name": "ValidationResult",
+      "line": 62,
+      "born": "2026-11-13T11:41:45.000Z",
+      "lastTouched": "2026-11-13T11:41:45.000Z",
+      "ageDays": 0,
+      "author": "pradeeptrain9",
+      "lastMessage": "feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)",
+      "epitaph": "Here lies ValidationResult. Born November 13, 2026. Last touched November 13, 2026 by pradeeptrain9: \"feat: Week 2 — web UI (Cemetery, Ledger, Epitaph), demo data, layout prop test, exorcise integration test (31 tests)\". Unvisited 0 days."
+    }
+  ],
+  "cobwebs": [],
+  "haunted": [
+    {
+      "path": ".kiro/specs/graveyard/tasks.md",
+      "commits90d": 5,
+      "authors": 1
+    },
+    {
+      "path": "README.md",
+      "commits90d": 3,
+      "authors": 1
+    },
+    {
+      "path": "web/src/App.tsx",
+      "commits90d": 3,
+      "authors": 1
+    },
+    {
+      "path": "engine/src/knip.ts",
+      "commits90d": 2,
+      "authors": 1
+    },
+    {
+      "path": "engine/test/knip.unit.test.ts",
+      "commits90d": 2,
+      "authors": 1
+    },
+    {
+      "path": "web/src/index.css",
+      "commits90d": 2,
+      "authors": 1
+    },
+    {
+      "path": "web/tsconfig.json",
+      "commits90d": 2,
+      "authors": 1
+    },
+    {
+      "path": "web/vite.config.ts",
+      "commits90d": 2,
+      "authors": 1
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "commits90d": 1,
+      "authors": 1
+    },
+    {
+      "path": ".gitignore",
+      "commits90d": 1,
+      "authors": 0
+    }
+  ],
+  "plots": [
+    {
+      "dir": "engine",
+      "files": 21,
+      "deadFiles": 6,
+      "fog": 0.29
+    },
+    {
+      "dir": "web",
+      "files": 8,
+      "deadFiles": 2,
+      "fog": 0.25
+    }
+  ]
+}

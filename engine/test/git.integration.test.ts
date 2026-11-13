@@ -9,7 +9,7 @@ import { tmpdir } from 'node:os';
 import { execFile as _execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
-import { headInfo, lsFiles, buildHistoryMap, isClean, fileHistory } from '../src/git.js';
+import { headInfo, lsFiles, buildHistoryMap, isClean, fileHistory, commitsSince } from '../src/git.js';
 
 const execFile = promisify(_execFile);
 
@@ -121,5 +121,32 @@ describe('fileHistory()', () => {
     expect(hist).not.toBeNull();
     expect(hist!.born).toBe('2024-01-01T00:00:00.000Z');
     expect(hist!.last).toBe('2024-03-15T12:00:00.000Z');
+  });
+});
+
+describe('commitsSince()', () => {
+  it('counts commits per file within the window', async () => {
+    // Window: 2024-02-01 → HEAD (2024-06-01)
+    // beta.ts was updated on 2024-03-15 → 1 commit in window
+    // gamma.ts was added on 2024-06-01 → 1 commit in window
+    // alpha.ts was only touched on 2024-01-01 → 0 in window
+    const counts = await commitsSince('2024-02-01T00:00:00Z', repoDir);
+    expect(counts.get('beta.ts')).toBe(1);
+    expect(counts.get('gamma.ts')).toBe(1);
+    expect(counts.get('alpha.ts')).toBeUndefined();
+  });
+
+  it('returns empty map when no commits in window', async () => {
+    // Window far in the future — no commits
+    const counts = await commitsSince('2030-01-01T00:00:00Z', repoDir);
+    expect(counts.size).toBe(0);
+  });
+
+  it('counts all files when window covers full history', async () => {
+    const counts = await commitsSince('2010-01-01T00:00:00Z', repoDir);
+    // alpha and beta added in commit 1, beta updated in commit 2, gamma in commit 3
+    expect(counts.get('alpha.ts')).toBe(1);
+    expect((counts.get('beta.ts') ?? 0)).toBeGreaterThanOrEqual(1);
+    expect(counts.get('gamma.ts')).toBe(1);
   });
 });

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "repo": "humanwhocodes-config-array",
+  "headSha": "bf264c7cc6c20ce844bf17a162b04c1e773d3cd0",
+  "headDate": "2024-04-17T18:23:01.000Z",
+  "scannedAt": "2026-11-13T12:30:36.074Z",
+  "graves": [
+    {
+      "id": "6890caf5ca",
+      "kind": "file",
+      "path": "nitpik.config.js",
+      "born": "2020-06-05T00:37:18.000Z",
+      "lastTouched": "2020-06-05T00:37:18.000Z",
+      "ageDays": 1412,
+      "author": "Nicholas C. Zakas",
+      "lastMessage": "Chore: Add Nitpik formatting",
+      "epitaph": "Here lies nitpik.config.js. Born June 5, 2020. Last touched June 5, 2020 by Nicholas C. Zakas: \"Chore: Add Nitpik formatting\". Unvisited 1412 days."
+    },
+    {
+      "id": "f5ad44311b",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "@nitpik/javascript",
+      "born": "2019-07-08T18:49:55.000Z",
+      "lastTouched": "2024-04-17T18:23:01.000Z",
+      "ageDays": 0,
+      "author": "github-actions[bot]",
+      "lastMessage": "chore(main): release 0.13.0 (#137)",
+      "epitaph": "Here lies @nitpik/javascript. Born July 8, 2019. Last touched April 17, 2024 by github-actions[bot]: \"chore(main): release 0.13.0 (#137)\". Unvisited 0 days."
+    },
+    {
+      "id": "a18b7df99d",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "chai",
+      "born": "2019-07-08T18:49:55.000Z",
+      "lastTouched": "2024-04-17T18:23:01.000Z",
+      "ageDays": 0,
+      "author": "github-actions[bot]",
+      "lastMessage": "chore(main): release 0.13.0 (#137)",
+      "epitaph": "Here lies chai. Born July 8, 2019. Last touched April 17, 2024 by github-actions[bot]: \"chore(main): release 0.13.0 (#137)\". Unvisited 0 days."
+    },
+    {
+      "id": "e1b7bf260c",
+      "kind": "file",
+      "path": "tests/config-array.test.js",
+      "born": "2019-07-08T18:49:55.000Z",
+      "lastTouched": "2024-04-17T17:52:46.000Z",
+      "ageDays": 0,
+      "author": "Nicholas C. Zakas",
+      "lastMessage": "fix: Throw friendly message for non-object configs (#136)",
+      "epitaph": "Here lies tests/config-array.test.js. Born July 8, 2019. Last touched April 17, 2024 by Nicholas C. Zakas: \"fix: Throw friendly message for non-object configs (#136)\". Unvisited 0 days."
+    }
+  ],
+  "cobwebs": [
+    {
+      "id": "20bb72a792",
+      "path": "src/config-array.js",
+      "line": 417,
+      "tag": "TODO",
+      "text": "Throw more verbose error",
+      "author": "Nicholas C. Zakas",
+      "ageDays": 1412
+    },
+    {
+      "id": "e2cc339368",
+      "path": "src/config-array.js",
+      "line": 727,
+      "tag": "TODO",
+      "text": "Maybe move elsewhere? Maybe combine with getConfig() logic?",
+      "author": "Nicholas C. Zakas",
+      "ageDays": 573
+    },
+    {
+      "id": "1939655b1d",
+      "path": "src/config-array.js",
+      "line": 785,
+      "tag": "TODO",
+      "text": "Maybe move elsewhere?",
+      "author": "Nicholas C. Zakas",
+      "ageDays": 573
+    }
+  ],
+  "haunted": [
+    {
+      "path": "package-lock.json",
+      "commits90d": 6,
+      "authors": 2
+    },
+    {
+      "path": "package.json",
+      "commits90d": 6,
+      "authors": 2
+    },
+    {
+      "path": "CHANGELOG.md",
+      "commits90d": 5,
+      "authors": 1
+    },
+    {
+      "path": "src/config-array.js",
+      "commits90d": 4,
+      "authors": 3
+    },
+    {
+      "path": "tests/config-array.test.js",
+      "commits90d": 3,
+      "authors": 2
+    },
+    {
+      "path": ".github/workflows/release-please.yml",
+      "commits90d": 1,
+      "authors": 1
+    }
+  ],
+  "plots": [
+    {
+      "dir": ".",
+      "files": 3,
+      "deadFiles": 1,
+      "fog": 0.33
+    },
+    {
+      "dir": "src",
+      "files": 4,
+      "deadFiles": 0,
+      "fog": 0
+    },
+    {
+      "dir": "tests",
+      "files": 1,
+      "deadFiles": 1,
+      "fog": 1
+    }
+  ]
+}

@@ -36,6 +36,8 @@ Example: while writing `build.ts`, the determinism property test immediately cau
 
 3. **Exorcise export edit (Property 9):** The original regex `replace(/^export /, '')` left a leading space when the line started with `export  function` (double space). Shrunk counterexample: `"export  const x = 1"`. Fix: `replace(/^export\s+/, '')` — wait, actually the spec says "byte-identical rest" so the correct fix is `replace(/^export /, '')` and document that lines must have exactly one space after `export`. The test confirmed this invariant holds for all knip-reported lines.
 
+4. **commitsSince blank-line bug (integration test, not PBT):** `git log --format=%H --name-only` outputs a blank line *between* the sha and the file list, then another blank line between commits. The parser treated the first blank line as "end of file list", so no files were ever counted — haunted houses were always empty. Added 3 integration tests against the fixture repo (window that includes commits, empty window, full history window). Fixed by tracking `pastBlank` state separately from `seenCommitLine`.
+
 ---
 
 ## What MCP made possible
@@ -54,4 +56,4 @@ The key insight: the graveyard data is queryable from the editor without opening
 
 - **Week 1 (Tasks 1–7, 10, 11):** engine complete — schema, git, knip, build, CLI, MCP, 25 tests
 - **Week 2 (Tasks 8–9):** full web UI — Cemetery SVG, Ledger, Epitaph panel, demo data, layout prop test, exorcise integration test (31 tests total)
-- **Week 3:** LLM epitaph, deploy, video, blog post, submission
+- **Week 3:** real demo scans, 3 bug fixes (commitsSince parser, vite/client types, npx command); deploy live; 36 tests passing

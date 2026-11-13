@@ -15,7 +15,7 @@ Every dead file, unused export, and orphaned dependency gets a **tombstone** —
 
 Old TODO/FIXME/HACK comments (via `git blame`) become **cobwebs** on the stones. The most-churned files in the last 90 days become **haunted houses** — these are your bug magnets. Plots (top-level directories) are covered in **fog** proportional to how dead they are.
 
-One click opens the exorcise command: `npx graveyard exorcise <id>`. It creates a fresh branch, removes the artifact, commits — and stops. You review the diff, open a PR. No yolo deletes.
+One click opens the exorcise command: `node engine/dist/cli.js exorcise <id>`. It creates a fresh branch, removes the artifact, commits — and stops. You review the diff, open a PR. No yolo deletes.
 
 ## How Kiro shaped the build
 
@@ -44,7 +44,7 @@ One click opens the exorcise command: `npx graveyard exorcise <id>`. It creates 
 - Accessible: all tombstones are `role="button" tabIndex={0}`, Ledger table has `aria-sort`, Epitaph has `role="dialog" aria-modal`, reduced-motion respected
 
 ## What's next
-- Publish `graveyard-engine` to npm so `npx graveyard scan .` works without install
+- Publish `graveyard-engine` to npm so `node engine/dist/cli.js scan .` works without install
 - Real LLM epitaphs (the timeout+fact-validation guard is already built, just needs an API key config)
 - VS Code extension using the same MCP tools
 

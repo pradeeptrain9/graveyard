@@ -8,9 +8,9 @@ import Epitaph from './Epitaph.js';
 type View = 'cemetery' | 'ledger';
 
 const DEMOS = [
-  { label: 'socket.io', file: `${import.meta.env.BASE_URL}demo/socket.io.graveyard.json` },
-  { label: 'got', file: `${import.meta.env.BASE_URL}demo/got.graveyard.json` },
-  { label: 'chalk', file: `${import.meta.env.BASE_URL}demo/chalk.graveyard.json` },
+  { label: 'jest-extended', file: `${import.meta.env.BASE_URL}demo/jest-extended.graveyard.json` },
+  { label: 'graveyard', file: `${import.meta.env.BASE_URL}demo/graveyard.graveyard.json` },
+  { label: 'config-array', file: `${import.meta.env.BASE_URL}demo/config-array.graveyard.json` },
 ];
 
 export default function App() {
@@ -161,7 +161,7 @@ export default function App() {
               style={{
                 background: graveyard?.repo === d.label ? 'var(--color-accent)' : 'rgba(255,255,255,0.07)',
                 border: 'none',
-                color: graveyard?.repo === d.label ? '#fff' : 'var(--color-moon)',
+                color: graveyard?.repo === d.label ? 'var(--color-bg)' : 'var(--color-moon)',
                 padding: '0.3rem 0.8rem',
                 borderRadius: '4px',
                 fontSize: '0.82rem',
@@ -303,7 +303,7 @@ function ViewBtn({ label, active, onClick }: { label: string; active: boolean; o
       style={{
         background: active ? 'var(--color-accent)' : 'rgba(255,255,255,0.07)',
         border: 'none',
-        color: active ? '#fff' : 'var(--color-moon)',
+        color: active ? 'var(--color-bg)' : 'var(--color-moon)',
         padding: '0.3rem 0.8rem',
         borderRadius: '4px',
         fontSize: '0.82rem',

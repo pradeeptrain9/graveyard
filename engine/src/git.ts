@@ -215,21 +215,53 @@ export async function commitsSince(
   sinceDate: string,
   cwd: string,
 ): Promise<Map<string, number>> {
-  // git log --since accepts ISO date
+  // Use NUL-terminated format so we can split cleanly.
+  // git log --format=%H%x00 --name-only produces:
+  //   <sha>\0\n
+  //   \n           ← blank separator between header and file list
+  //   file1\n
+  //   file2\n
+  //   \n           ← blank separator between commits
+  //   <sha>\0\n
+  //   ...
   const out = await run(
-    ['log', `--after=${sinceDate}`, '--name-only', '--format=%H', '--diff-filter=ACMRD'],
+    ['log', `--after=${sinceDate}`, '--name-only', '--format=%H%x00', '--diff-filter=ACMRD'],
     cwd,
   );
   const counts = new Map<string, number>();
-  let inFiles = false;
+  let seenCommitLine = false; // true once we've seen the sha line
+  let pastBlank = false;      // true once we've seen the blank line after sha
+
   for (const raw of out.split('\n')) {
     const line = raw.trim();
-    if (line.length === 40 && /^[0-9a-f]+$/.test(line)) {
-      inFiles = true;
+
+    // sha line: contains NUL marker from %x00
+    if (line.endsWith('\0') || (line.length === 41 && line[40] === '\0')) {
+      seenCommitLine = true;
+      pastBlank = false;
       continue;
     }
-    if (line === '') { inFiles = false; continue; }
-    if (inFiles && line.length > 0) {
+    // sha line without NUL (plain 40-char hex) — fallback
+    if (!seenCommitLine && line.length === 40 && /^[0-9a-f]+$/.test(line)) {
+      seenCommitLine = true;
+      pastBlank = false;
+      continue;
+    }
+
+    if (line === '') {
+      if (seenCommitLine && !pastBlank) {
+        // This is the blank line between the sha and the file list — skip it
+        pastBlank = true;
+      } else {
+        // Blank line between commits — reset
+        seenCommitLine = false;
+        pastBlank = false;
+      }
+      continue;
+    }
+
+    // A non-empty line after we've passed the blank = a file path
+    if (seenCommitLine && pastBlank) {
       counts.set(line, (counts.get(line) ?? 0) + 1);
     }
   }

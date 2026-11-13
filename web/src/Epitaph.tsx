@@ -35,7 +35,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
 
   if (!grave) return null;
 
-  const command = `npx graveyard exorcise ${grave.id}`;
+  const command = `node engine/dist/cli.js exorcise ${grave.id}`;
   const relatedCobwebs = cobwebs.filter((c) => c.path === grave.path);
 
   async function copyCommand() {
@@ -105,7 +105,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
       </blockquote>
 
       {/* Facts */}
-      <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.35rem 1rem' }}>
+      <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.35rem 1rem' }} aria-label="Grave details">
         <Fact label="Kind" value={grave.kind} />
         <Fact label="Path" value={grave.path} mono />
         {grave.name && <Fact label="Name" value={grave.name} mono />}
@@ -120,7 +120,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
       {/* Cobwebs on this file */}
       {relatedCobwebs.length > 0 && (
         <section aria-label="Cobwebs in this file">
-          <h3 style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--color-stone)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+          <h3 style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--color-stone-old)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
             🕸 Cobwebs ({relatedCobwebs.length})
           </h3>
           <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
@@ -128,7 +128,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
               <li key={c.id} style={{ fontSize: '0.82rem', color: 'var(--color-moon)', background: 'rgba(255,255,255,0.04)', padding: '0.4rem 0.6rem', borderRadius: '4px' }}>
                 <span style={{ color: 'var(--color-haunted)', fontWeight: 600 }}>{c.tag}</span>
                 {' '}line {c.line} · {c.ageDays}d · {c.author}
-                <div style={{ color: 'var(--color-stone)', marginTop: '2px' }}>{c.text}</div>
+                <div style={{ color: 'var(--color-stone-old)', marginTop: '2px' }}>{c.text}</div>
               </li>
             ))}
           </ul>
@@ -137,7 +137,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
 
       {/* Exorcise command */}
       <section aria-label="Exorcise command">
-        <h3 style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--color-stone)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        <h3 style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--color-stone-old)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           ⚡ Exorcise
         </h3>
         <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
@@ -148,7 +148,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
               padding: '0.5rem 0.75rem',
               borderRadius: '4px',
               fontSize: '0.78rem',
-              color: 'var(--color-accent)',
+              color: 'var(--color-moon)',
               overflowX: 'auto',
               whiteSpace: 'nowrap',
             }}
@@ -162,7 +162,7 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
             style={{
               background: 'var(--color-accent)',
               border: 'none',
-              color: '#fff',
+              color: '#0d0d1a',
               padding: '0.5rem 0.75rem',
               borderRadius: '4px',
               fontSize: '0.8rem',
@@ -172,8 +172,8 @@ export default function Epitaph({ grave, cobwebs, onClose }: Props) {
             Copy
           </button>
         </div>
-        <p style={{ margin: '0.5rem 0 0', fontSize: '0.78rem', color: 'var(--color-stone)' }}>
-          Creates a branch <code>graveyard/exorcise-{grave.id}</code> and commits the deletion. No push.
+        <p style={{ margin: '0.5rem 0 0', fontSize: '0.78rem', color: 'var(--color-stone-old)' }}>
+          Creates branch <code>graveyard/exorcise-{grave.id}</code> and commits. No push. Run from the repo root after <code>git clone</code> + <code>npm install</code>.
         </p>
       </section>
     </div>

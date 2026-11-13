@@ -21,7 +21,7 @@ Click a stone and an **epitaph** slides in:
 
 > *Here lies SocketReservedEventsMap. Born August 5, 2021. Last touched October 1, 2023 by Damien Arrachequesne: "types: reserved events map". Unvisited 1120 days.*
 
-At the bottom of the panel: `npx graveyard exorcise ee80e28a1f`. Run it, and Graveyard creates a branch `graveyard/exorcise-ee80e28a1f`, removes the artifact, commits — and stops. You review the diff and open a PR. No yolo deletes.
+At the bottom of the panel: `node engine/dist/cli.js exorcise ee80e28a1f`. Run it, and Graveyard creates a branch `graveyard/exorcise-ee80e28a1f`, removes the artifact, commits — and stops. You review the diff and open a PR. No yolo deletes.
 
 ---
 
@@ -96,10 +96,10 @@ The shrunk counterexamples were the real value — fast-check doesn't just tell 
 
 ```bash
 # Scan your repo
-npx graveyard scan .
+node engine/dist/cli.js scan .
 
 # Then open graveyard.json in the web UI, or run:
-npx graveyard exorcise <id>
+node engine/dist/cli.js exorcise <id>
 ```
 
 Or drop a `graveyard.json` on the [live demo](https://pradeeptrain9.github.io/graveyard/).

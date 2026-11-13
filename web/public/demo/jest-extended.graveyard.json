@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "repo": "jest-community-jest-extended",
+  "headSha": "bac81b32c33f73cb59f2115664d07c26b82aa1d2",
+  "headDate": "2026-11-09T04:27:53.000Z",
+  "scannedAt": "2026-11-13T12:31:01.668Z",
+  "graves": [
+    {
+      "id": "87a8a65574",
+      "kind": "file",
+      "path": "all.js",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2025-06-07T03:33:46.000Z",
+      "ageDays": 520,
+      "author": "Keegan Witt",
+      "lastMessage": "feat: #591: Add BigInt support to number matchers (#772)",
+      "epitaph": "Here lies all.js. Born May 8, 2023. Last touched June 7, 2025 by Keegan Witt: \"feat: #591: Add BigInt support to number matchers (#772)\". Unvisited 520 days."
+    },
+    {
+      "id": "a21337e849",
+      "kind": "file",
+      "path": "examples/typescript/all/jest.config.js",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2023-05-08T01:26:15.000Z",
+      "ageDays": 1281,
+      "author": "renovate[bot]",
+      "lastMessage": "Lock file maintenance",
+      "epitaph": "Here lies examples/typescript/all/jest.config.js. Born May 8, 2023. Last touched May 8, 2023 by renovate[bot]: \"Lock file maintenance\". Unvisited 1281 days."
+    },
+    {
+      "id": "c6ef3d85a2",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "eslint-config-prettier",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2026-11-08T21:16:40.000Z",
+      "ageDays": 0,
+      "author": "renovate[bot]",
+      "lastMessage": "Update dependency typescript to v7 (#939)",
+      "epitaph": "Here lies eslint-config-prettier. Born May 8, 2023. Last touched November 8, 2026 by renovate[bot]: \"Update dependency typescript to v7 (#939)\". Unvisited 0 days."
+    },
+    {
+      "id": "ca7648763e",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "eslint-plugin-prettier",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2026-11-08T21:16:40.000Z",
+      "ageDays": 0,
+      "author": "renovate[bot]",
+      "lastMessage": "Update dependency typescript to v7 (#939)",
+      "epitaph": "Here lies eslint-plugin-prettier. Born May 8, 2023. Last touched November 8, 2026 by renovate[bot]: \"Update dependency typescript to v7 (#939)\". Unvisited 0 days."
+    },
+    {
+      "id": "8273e60ed0",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "expect",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2026-11-08T21:16:40.000Z",
+      "ageDays": 0,
+      "author": "renovate[bot]",
+      "lastMessage": "Update dependency typescript to v7 (#939)",
+      "epitaph": "Here lies expect. Born May 8, 2023. Last touched November 8, 2026 by renovate[bot]: \"Update dependency typescript to v7 (#939)\". Unvisited 0 days."
+    },
+    {
+      "id": "c63a79b671",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "jest",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2026-11-08T21:16:40.000Z",
+      "ageDays": 0,
+      "author": "renovate[bot]",
+      "lastMessage": "Update dependency typescript to v7 (#939)",
+      "epitaph": "Here lies jest. Born May 8, 2023. Last touched November 8, 2026 by renovate[bot]: \"Update dependency typescript to v7 (#939)\". Unvisited 0 days."
+    },
+    {
+      "id": "021178f88c",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "jest-matcher-utils",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2026-11-08T21:16:40.000Z",
+      "ageDays": 0,
+      "author": "renovate[bot]",
+      "lastMessage": "Update dependency typescript to v7 (#939)",
+      "epitaph": "Here lies jest-matcher-utils. Born May 8, 2023. Last touched November 8, 2026 by renovate[bot]: \"Update dependency typescript to v7 (#939)\". Unvisited 0 days."
+    },
+    {
+      "id": "673615f9f8",
+      "kind": "file",
+      "path": "src/all/index.ts",
+      "born": "2025-04-25T03:39:31.000Z",
+      "lastTouched": "2025-04-25T03:39:31.000Z",
+      "ageDays": 563,
+      "author": "Keegan Witt",
+      "lastMessage": "Switch to Typescript (#743)",
+      "epitaph": "Here lies src/all/index.ts. Born April 25, 2025. Last touched April 25, 2025 by Keegan Witt: \"Switch to Typescript (#743)\". Unvisited 563 days."
+    },
+    {
+      "id": "ab6ae17d88",
+      "kind": "file",
+      "path": "website/babel.config.js",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2023-05-08T01:26:15.000Z",
+      "ageDays": 1281,
+      "author": "renovate[bot]",
+      "lastMessage": "Lock file maintenance",
+      "epitaph": "Here lies website/babel.config.js. Born May 8, 2023. Last touched May 8, 2023 by renovate[bot]: \"Lock file maintenance\". Unvisited 1281 days."
+    },
+    {
+      "id": "2f3760107e",
+      "kind": "file",
+      "path": "website/docusaurus.config.js",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2026-09-21T17:16:23.000Z",
+      "ageDays": 48,
+      "author": "Noritaka Kobayashi",
+      "lastMessage": "chore(website): update Twitter links to X (#968)",
+      "epitaph": "Here lies website/docusaurus.config.js. Born May 8, 2023. Last touched September 21, 2026 by Noritaka Kobayashi: \"chore(website): update Twitter links to X (#968)\". Unvisited 48 days."
+    },
+    {
+      "id": "1e3ba66bdf",
+      "kind": "file",
+      "path": "website/sidebars.js",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2023-05-08T01:26:15.000Z",
+      "ageDays": 1281,
+      "author": "renovate[bot]",
+      "lastMessage": "Lock file maintenance",
+      "epitaph": "Here lies website/sidebars.js. Born May 8, 2023. Last touched May 8, 2023 by renovate[bot]: \"Lock file maintenance\". Unvisited 1281 days."
+    },
+    {
+      "id": "69ff5b90c8",
+      "kind": "file",
+      "path": "website/src/components/CustomSandpack.tsx",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2025-06-08T20:08:13.000Z",
+      "ageDays": 518,
+      "author": "Keegan Witt",
+      "lastMessage": "build: Upgrade website (#783)",
+      "epitaph": "Here lies website/src/components/CustomSandpack.tsx. Born May 8, 2023. Last touched June 8, 2025 by Keegan Witt: \"build: Upgrade website (#783)\". Unvisited 518 days."
+    },
+    {
+      "id": "d45843fb13",
+      "kind": "file",
+      "path": "website/src/components/HomepageFeatures/index.tsx",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2025-04-11T17:53:22.000Z",
+      "ageDays": 576,
+      "author": "Keegan Witt",
+      "lastMessage": "Fix dev:docs (#736)",
+      "epitaph": "Here lies website/src/components/HomepageFeatures/index.tsx. Born May 8, 2023. Last touched April 11, 2025 by Keegan Witt: \"Fix dev:docs (#736)\". Unvisited 576 days."
+    },
+    {
+      "id": "748ce541bd",
+      "kind": "file",
+      "path": "website/src/pages/index.tsx",
+      "born": "2023-05-08T01:26:15.000Z",
+      "lastTouched": "2025-04-11T17:53:22.000Z",
+      "ageDays": 576,
+      "author": "Keegan Witt",
+      "lastMessage": "Fix dev:docs (#736)",
+      "epitaph": "Here lies website/src/pages/index.tsx. Born May 8, 2023. Last touched April 11, 2025 by Keegan Witt: \"Fix dev:docs (#736)\". Unvisited 576 days."
+    }
+  ],
+  "cobwebs": [
+    {
+      "id": "f78aded420",
+      "path": "test/matchers/fail.test.ts",
+      "line": 7,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "8e0a8a0058",
+      "path": "test/matchers/fail.test.ts",
+      "line": 11,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "723fecf48d",
+      "path": "test/matchers/fail.test.ts",
+      "line": 18,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "2f43521615",
+      "path": "test/matchers/fail.test.ts",
+      "line": 22,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "e30e868d60",
+      "path": "test/matchers/pass.test.ts",
+      "line": 7,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "047c219b68",
+      "path": "test/matchers/pass.test.ts",
+      "line": 11,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "4ac13d27cf",
+      "path": "test/matchers/pass.test.ts",
+      "line": 18,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "fb1916b23a",
+      "path": "test/matchers/pass.test.ts",
+      "line": 22,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "ba20d290ba",
+      "path": "test/matchers/toBeArrayOfSize.test.ts",
+      "line": 31,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "db13c8f9af",
+      "path": "test/matchers/toBeArrayOfSize.test.ts",
+      "line": 36,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    },
+    {
+      "id": "622bd320b9",
+      "path": "test/matchers/toBeArrayOfSize.test.ts",
+      "line": 41,
+      "tag": "TODO",
+      "text": "fix",
+      "author": "Keegan Witt",
+      "ageDays": 563
+    }
+  ],
+  "haunted": [
+    {
+      "path": "yarn.lock",
+      "commits90d": 17,
+      "authors": 2
+    },
+    {
+      "path": "website/yarn.lock",
+      "commits90d": 14,
+      "authors": 1
+    },
+    {
+      "path": "package.json",
+      "commits90d": 6,
+      "authors": 2
+    },
+    {
+      "path": "examples/typescript/all/yarn.lock",
+      "commits90d": 4,
+      "authors": 1
+    },
+    {
+      "path": ".github/workflows/ci.yaml",
+      "commits90d": 3,
+      "authors": 2
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "commits90d": 3,
+      "authors": 3
+    },
+    {
+      "path": "website/package.json",
+      "commits90d": 3,
+      "authors": 1
+    },
+    {
+      "path": ".changeset/tidy-bigints-pass.md",
+      "commits90d": 1,
+      "authors": 1
+    },
+    {
+      "path": ".changeset/tidy-numbers-check.md",
+      "commits90d": 1,
+      "authors": 1
+    },
+    {
+      "path": "src/matchers/toBeInteger.ts",
+      "commits90d": 1,
+      "authors": 1
+    }
+  ],
+  "plots": [
+    {
+      "dir": ".",
+      "files": 3,
+      "deadFiles": 1,
+      "fog": 0.33
+    },
+    {
+      "dir": "examples",
+      "files": 3,
+      "deadFiles": 1,
+      "fog": 0.33
+    },
+    {
+      "dir": "src",
+      "files": 81,
+      "deadFiles": 1,
+      "fog": 0.01
+    },
+    {
+      "dir": "test",
+      "files": 80,
+      "deadFiles": 0,
+      "fog": 0
+    },
+    {
+      "dir": "types",
+      "files": 1,
+      "deadFiles": 0,
+      "fog": 0
+    },
+    {
+      "dir": "website",
+      "files": 6,
+      "deadFiles": 6,
+      "fog": 1
+    }
+  ]
+}
