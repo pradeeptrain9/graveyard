@@ -39,22 +39,22 @@
   - [ ] 7.2 Scan 3 public repos into `web/public/demo/` (checkpoint: inspect output by hand).
   - _Requirements: 1.1, 1.4, 1.5, 7.1_
 
-- [ ] 8. Web: data + Ledger
-  - [ ] 8.1 Demo picker + file drop with `validateGraveyard`.
-  - [ ] 8.2 `Ledger.tsx` sortable accessible table.
+- [x] 8. Web: data + Ledger
+  - [x] 8.1 Demo picker + file drop with `validateGraveyard`.
+  - [x] 8.2 `Ledger.tsx` sortable accessible table.
   - _Requirements: 6.1, 6.2, 7.1, 7.2_
 
-- [ ] 9. Web: Cemetery
-  - [ ] 9.1 `layout.ts` pure + property test 7.
-  - [ ] 9.2 `Cemetery.tsx` plots, stones, height buckets, haunted houses, cobwebs.
-  - [ ] 9.3 Lantern mask + fog; reduced-motion handling.
-  - [ ] 9.4 `Epitaph.tsx` panel with keyboard activation and copy command.
-  - [ ] 9.5 Web Audio wind, off by default.
+- [x] 9. Web: Cemetery
+  - [x] 9.1 `layout.ts` pure + property test 7.
+  - [x] 9.2 `Cemetery.tsx` plots, stones, height buckets, haunted houses, cobwebs.
+  - [x] 9.3 Lantern mask + fog; reduced-motion handling.
+  - [x] 9.4 `Epitaph.tsx` panel with keyboard activation and copy command.
+  - [x] 9.5 Web Audio wind, off by default.
   - _Requirements: 5.1–5.7, 6.2–6.4_
 
 - [x] 10. Exorcise
   - [x] 10.1 `exorcise.ts` for file, dependency, export; property test 9.
-  - [ ] 10.2 Integration test on fixture repo: dirty tree refused, branch + one commit created, no push.
+  - [x] 10.2 Integration test on fixture repo: dirty tree refused, branch + one commit created, no push.
   - _Requirements: 8.1–8.5_
 
 - [x] 11. MCP server
@@ -62,11 +62,11 @@
   - [ ] 11.2 Manual check in Kiro chat: "list dead exports in this repo".
   - _Requirements: 9.1, 9.2_
 
-- [ ] 12. Optional LLM epitaph
-  - [ ] 12.1 `llmEpitaph()` with timeout and fact validation; property test 8.
+- [x] 12. Optional LLM epitaph
+  - [x] 12.1 `llmEpitaph()` with timeout and fact validation; property test 8.
   - _Requirements: 10.1, 10.2_
 
-- [ ] 13. Ship
-  - [ ] 13.1 Deploy `web` static build; link in README.
-  - [ ] 13.2 README: install, `npx` usage, screenshots, MCP setup.
+- [x] 13. Ship
+  - [ ] 13.1 Deploy `web` static build; link in README. ← GitHub Pages workflow added; needs Pages enabled in repo settings
+  - [x] 13.2 README: install, `npx` usage, screenshots, MCP setup.
   - _Requirements: submission_
