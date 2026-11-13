@@ -36,7 +36,7 @@
 
 - [x] 7. CLI scan
   - [x] 7.1 `graveyard scan` with atomic write and exit codes.
-  - [x] 7.2 3 demo graveyards in `web/public/demo/` (got, chalk, socket.io).
+  - [x] 7.2 3 demo graveyards in `web/public/demo/` Real scans of jest-extended, config-array and Graveyard itself. (An earlier hand-written version was removed: it hid the commitsSince bug.)
   - _Requirements: 1.1, 1.4, 1.5, 7.1_
 
 - [x] 8. Web: data + Ledger

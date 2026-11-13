@@ -8,7 +8,7 @@
 
 ## 0:20 — Walk the cemetery (40s)
 
-*[Screen: browser opens https://pradeeptrain9.github.io/graveyard/ with socket.io demo loaded]*
+*[Screen: browser opens https://pradeeptrain9.github.io/graveyard/ with the jest-extended demo loaded]*
 
 "This is Graveyard. Each plot is a directory. Each stone is dead code — taller means older."
 
@@ -16,15 +16,17 @@
 
 "The lantern follows your cursor. Outside it, everything is still readable — that's enforced at 3:1 contrast, not just dimmed to black."
 
-*[Hover a tall stone in lib/contrib/]*
+*[Hover a tall stone in website/]*
 
-"This file hasn't been touched in 2019 days. It's a v2 compatibility shim."
+"website/sidebars.js hasn't been touched in 1281 days. Look at the fog on this plot: 100% of the files in website/ are dead."
 
 *[Click the stone — Epitaph panel slides in]*
 
-"Here's its epitaph: born June 2019, last touched April 2021, by Damien Arrachequesne — 'compat: v2 namespace shim'. Unvisited 2019 days."
+"Here's its epitaph: born May 8, 2023, last touched the same day by renovate[bot] — 'Lock file maintenance'. Unvisited 1281 days. The last visitor was a bot."
 
-"The cobweb means there's an old TODO on this file — 'Remove entire file — v2 compat shim is no longer needed'. That's 1240 days old."
+*[Switch to Ledger view]*
+
+"Same data as a table. 11 cobwebs: TODOs in the test suite that have been waiting 563 days."
 
 ## 1:00 — Exorcise (40s)
 
@@ -32,15 +34,15 @@
 
 "At the bottom: the exorcise command. I copy it."
 
-*[Switch to terminal, paste and run]*
+*[Switch to terminal — a local clone of jest-extended, freshly scanned — paste and run]*
 
 ```
-node engine/dist/cli.js exorcise f21f3e2090
+node engine/dist/cli.js exorcise 1e3ba66bdf
 ```
 
-*[Terminal output: `[graveyard] exorcised f21f3e2090`]*
+*[Terminal output: `[graveyard] exorcised 1e3ba66bdf`]*
 
-"Graveyard created a branch `graveyard/exorcise-f21f3e2090`, ran `git rm`, and committed. It did not push. I review the diff, open a PR."
+"Graveyard created a branch `graveyard/exorcise-1e3ba66bdf`, ran `git rm`, and committed. It did not push. I review the diff, open a PR."
 
 *[Run `git log --oneline -2` — show the commit]*
 *[Run `git diff HEAD~1` — show the removal]*

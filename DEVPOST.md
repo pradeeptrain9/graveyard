@@ -40,11 +40,11 @@ One click opens the exorcise command: `node engine/dist/cli.js exorcise <id>`. I
 - Pure engine/web split: `buildGraveyard()` and `layout.ts` are pure functions with no I/O, fully testable with generated data
 - Single-pass git history: one `git log --name-only` walk builds the full `Map<path, {born, last, author, msg}>` instead of one `git log` per file
 - Schema-validated JSON: `validateGraveyard()` runs on every file drop and demo load, showing readable errors
-- 31 tests: 9 property-based (fast-check, 50–200 runs each), plus git and exorcise integration tests with real fixture repos built in temp dirs with `GIT_AUTHOR_DATE`
+- 36 tests: 9 property-based (fast-check, 50–200 runs each), plus git and exorcise integration tests with real fixture repos built in temp dirs with `GIT_AUTHOR_DATE`
 - Accessible: all tombstones are `role="button" tabIndex={0}`, Ledger table has `aria-sort`, Epitaph has `role="dialog" aria-modal`, reduced-motion respected
 
 ## What's next
-- Publish `graveyard-engine` to npm so `node engine/dist/cli.js scan .` works without install
+- Publish the engine to npm under an unclaimed name so it runs without cloning the repo
 - Real LLM epitaphs (the timeout+fact-validation guard is already built, just needs an API key config)
 - VS Code extension using the same MCP tools
 

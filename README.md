@@ -129,7 +129,7 @@ repo ──► engine (git + knip facts) ──► buildGraveyard() ──► gr
 - **`web/src/Cemetery.tsx`** — SVG scene with lantern mask and fog layers
 - **`web/src/Ledger.tsx`** — accessible sortable table
 
-**Tests:** 31 passing — 9 property-based tests (fast-check) + git/exorcise integration tests.
+**Tests:** 36 passing — 9 property-based tests (fast-check) + git/exorcise integration tests.
 
 ---
 

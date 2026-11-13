@@ -70,7 +70,7 @@ export interface Graveyard {
 ## Web
 - `layout.ts` (pure): plots in a grid, ordered by `dir`; stones in rows inside each plot, fixed cell size, so no overlap by construction. Height bucket = `min(4, floor(log2(ageDays/30 + 1)))`.
 - `Cemetery.tsx`: one `<svg>` with `viewBox`; plots as `<g>`, stones as `<g role="button" tabindex="0" aria-label="...">`. Lantern = CSS `radial-gradient` mask following pointer via CSS variables (`--lx`, `--ly`). Fog = SVG `feTurbulence` layer per plot, opacity = `fog`.
-- `Epitaph.tsx`: side panel, facts list, copy-to-clipboard `npx graveyard exorcise <id>`.
+- `Epitaph.tsx`: side panel, facts list, copy-to-clipboard `node engine/dist/cli.js exorcise <id>` (no npx: the `graveyard` name on npm belongs to an unrelated package).
 - `Ledger.tsx`: `<table>` with sortable headers (`aria-sort`).
 - Theme tokens on `:root` (moonlight palette) with readable contrast; fonts from Google Fonts (one display face for epitaphs, system UI for data).
 

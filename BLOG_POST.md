@@ -19,9 +19,11 @@ Old TODO/FIXME/HACK comments (found with `git grep`, aged with `git blame`) beco
 
 Click a stone and an **epitaph** slides in:
 
-> *Here lies SocketReservedEventsMap. Born August 5, 2021. Last touched October 1, 2023 by Damien Arrachequesne: "types: reserved events map". Unvisited 1120 days.*
+> *Here lies website/sidebars.js. Born May 8, 2023. Last touched May 8, 2023 by renovate[bot]: "Lock file maintenance". Unvisited 1281 days.*
 
-At the bottom of the panel: `node engine/dist/cli.js exorcise ee80e28a1f`. Run it, and Graveyard creates a branch `graveyard/exorcise-ee80e28a1f`, removes the artifact, commits — and stops. You review the diff and open a PR. No yolo deletes.
+(A real grave from the jest-extended demo. The last visitor was a bot.)
+
+At the bottom of the panel: `node engine/dist/cli.js exorcise 1e3ba66bdf`. Run it, and Graveyard creates a branch `graveyard/exorcise-1e3ba66bdf`, removes the artifact, commits — and stops. You review the diff and open a PR. No yolo deletes.
 
 ---
 
@@ -104,7 +106,7 @@ node engine/dist/cli.js exorcise <id>
 
 Or drop a `graveyard.json` on the [live demo](https://pradeeptrain9.github.io/graveyard/).
 
-The demo loads socket.io, got, and chalk as examples — with realistic graves, cobwebs, and haunted files so you can see what a real cemetery looks like.
+The demo includes real scans of [jest-extended](https://github.com/jest-community/jest-extended), [@humanwhocodes/config-array](https://github.com/humanwhocodes/config-array), and Graveyard itself. Every grave, cobweb and haunted house on the live site comes from running `graveyard scan` on those repos.
 
 ---
 
