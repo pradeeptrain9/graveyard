@@ -8,9 +8,9 @@ import Epitaph from './Epitaph.js';
 type View = 'cemetery' | 'ledger';
 
 const DEMOS = [
-  { label: 'socket.io', file: '/demo/socket.io.graveyard.json' },
-  { label: 'got', file: '/demo/got.graveyard.json' },
-  { label: 'chalk', file: '/demo/chalk.graveyard.json' },
+  { label: 'socket.io', file: `${import.meta.env.BASE_URL}demo/socket.io.graveyard.json` },
+  { label: 'got', file: `${import.meta.env.BASE_URL}demo/got.graveyard.json` },
+  { label: 'chalk', file: `${import.meta.env.BASE_URL}demo/chalk.graveyard.json` },
 ];
 
 export default function App() {
