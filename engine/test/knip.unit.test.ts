@@ -51,6 +51,43 @@ describe('adaptKnip()', () => {
     expect(adaptKnip([])).toHaveLength(0);
   });
 
+  it('handles real knip issues-shape output (got fixture)', () => {
+    const json = loadFixture('knip-got.json');
+    const graves = adaptKnip(json);
+
+    // got has 8 dead files and several exports/deps
+    const files = graves.filter((g) => g.kind === 'file');
+    const exports = graves.filter((g) => g.kind === 'export');
+    const deps = graves.filter((g) => g.kind === 'dependency');
+
+    expect(files.length).toBeGreaterThan(0);
+    expect(exports.length).toBeGreaterThan(0);
+    expect(deps.length).toBeGreaterThan(0);
+
+    // All file paths must be non-empty strings
+    for (const g of files) {
+      expect(typeof g.path).toBe('string');
+      expect(g.path.length).toBeGreaterThan(0);
+      expect(g.path).not.toMatch(/^\.\//); // no leading ./
+    }
+
+    // Exports must have name and path
+    for (const g of exports) {
+      expect(typeof g.name).toBe('string');
+      expect(typeof g.path).toBe('string');
+    }
+  });
+
+  it('handles real knip issues-shape output (chalk fixture)', () => {
+    const json = loadFixture('knip-chalk.json');
+    const graves = adaptKnip(json);
+
+    const files = graves.filter((g) => g.kind === 'file');
+    expect(files.length).toBeGreaterThan(0);
+    // chalk's vendor files should be present
+    expect(files.some((g) => g.path.includes('vendor'))).toBe(true);
+  });
+
   it('deduplicates identical entries', () => {
     const json = {
       files: [{ file: 'src/dupe.ts' }, { file: 'src/dupe.ts' }],

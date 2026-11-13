@@ -67,6 +67,6 @@
   - _Requirements: 10.1, 10.2_
 
 - [x] 13. Ship
-  - [ ] 13.1 Deploy `web` static build; link in README. ← GitHub Pages workflow added; needs Pages enabled in repo settings
+  - [x] 13.1 Deploy `web` static build; link in README. → https://pradeeptrain9.github.io/graveyard/
   - [x] 13.2 README: install, `npx` usage, screenshots, MCP setup.
   - _Requirements: submission_

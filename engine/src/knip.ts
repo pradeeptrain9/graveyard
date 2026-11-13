@@ -8,30 +8,51 @@ const execFile = promisify(_execFile);
 
 // ---------------------------------------------------------------------------
 // Knip JSON output types (what knip emits with --reporter json)
+// Two shapes exist: "legacy" (flat top-level arrays) and "issues" (per-file array)
 // ---------------------------------------------------------------------------
 
-interface KnipFileResult {
-  file: string;
-}
-
-interface KnipExportResult {
+// Legacy shape (knip < 5.x)
+interface KnipLegacyExportResult {
   file: string;
   identifier: string;
   line?: number;
-  col?: number;
 }
 
-interface KnipDependencyResult {
+interface KnipLegacyDepResult {
   name: string;
 }
 
-interface KnipOutput {
-  files?: KnipFileResult[];
-  exports?: KnipExportResult[];
-  types?: KnipExportResult[];
-  dependencies?: KnipDependencyResult[];
-  devDependencies?: KnipDependencyResult[];
-  unlisted?: KnipDependencyResult[];
+interface KnipLegacyOutput {
+  files?: Array<{ file: string } | string>;
+  exports?: KnipLegacyExportResult[];
+  types?: KnipLegacyExportResult[];
+  dependencies?: KnipLegacyDepResult[];
+  devDependencies?: KnipLegacyDepResult[];
+  unlisted?: KnipLegacyDepResult[];
+}
+
+// Issues shape (knip 5.x+)
+interface KnipIssueEntry {
+  name: string;
+  line?: number;
+  col?: number;
+  pos?: number;
+}
+
+interface KnipIssueFile {
+  file: string;
+  exports?: KnipIssueEntry[];
+  types?: KnipIssueEntry[];
+  dependencies?: KnipIssueEntry[];
+  devDependencies?: KnipIssueEntry[];
+  optionalPeerDependencies?: KnipIssueEntry[];
+  unlisted?: KnipIssueEntry[];
+}
+
+interface KnipIssuesOutput {
+  /** flat string array in the issues shape */
+  files?: string[];
+  issues?: KnipIssueFile[];
 }
 
 // ---------------------------------------------------------------------------
@@ -51,33 +72,79 @@ export interface PartialGrave {
 
 export function adaptKnip(raw: unknown): PartialGrave[] {
   if (typeof raw !== 'object' || raw === null) return [];
-  const knip = raw as KnipOutput;
+  const obj = raw as Record<string, unknown>;
   const results: PartialGrave[] = [];
 
-  for (const f of knip.files ?? []) {
-    if (typeof f.file === 'string' && f.file.length > 0) {
-      results.push({ kind: 'file', path: normPath(f.file) });
-    }
-  }
+  // Detect shape: issues-based (knip 5.x+) vs legacy flat arrays
+  const isIssuesShape = Array.isArray(obj.issues);
 
-  for (const e of [...(knip.exports ?? []), ...(knip.types ?? [])]) {
-    if (typeof e.file === 'string' && typeof e.identifier === 'string') {
-      results.push({
-        kind: 'export',
-        path: normPath(e.file),
-        name: e.identifier,
-        line: typeof e.line === 'number' ? e.line : undefined,
-      });
-    }
-  }
+  if (isIssuesShape) {
+    // --- Issues shape ---
+    const o = obj as KnipIssuesOutput;
 
-  for (const d of [
-    ...(knip.dependencies ?? []),
-    ...(knip.devDependencies ?? []),
-    ...(knip.unlisted ?? []),
-  ]) {
-    if (typeof d.name === 'string' && d.name.length > 0) {
-      results.push({ kind: 'dependency', path: 'package.json', name: d.name });
+    // files: flat string array
+    for (const f of o.files ?? []) {
+      if (typeof f === 'string' && f.length > 0) {
+        results.push({ kind: 'file', path: normPath(f) });
+      }
+    }
+
+    // per-file issues
+    for (const issue of o.issues ?? []) {
+      const filePath = normPath(issue.file);
+
+      for (const e of [...(issue.exports ?? []), ...(issue.types ?? [])]) {
+        if (typeof e.name === 'string' && e.name.length > 0) {
+          results.push({
+            kind: 'export',
+            path: filePath,
+            name: e.name,
+            line: typeof e.line === 'number' ? e.line : undefined,
+          });
+        }
+      }
+
+      for (const d of [
+        ...(issue.dependencies ?? []),
+        ...(issue.devDependencies ?? []),
+        ...(issue.optionalPeerDependencies ?? []),
+        ...(issue.unlisted ?? []),
+      ]) {
+        if (typeof d.name === 'string' && d.name.length > 0) {
+          results.push({ kind: 'dependency', path: 'package.json', name: d.name });
+        }
+      }
+    }
+  } else {
+    // --- Legacy flat shape ---
+    const knip = obj as KnipLegacyOutput;
+
+    for (const f of knip.files ?? []) {
+      const p = typeof f === 'string' ? f : f.file;
+      if (typeof p === 'string' && p.length > 0) {
+        results.push({ kind: 'file', path: normPath(p) });
+      }
+    }
+
+    for (const e of [...(knip.exports ?? []), ...(knip.types ?? [])]) {
+      if (typeof e.file === 'string' && typeof e.identifier === 'string') {
+        results.push({
+          kind: 'export',
+          path: normPath(e.file),
+          name: e.identifier,
+          line: typeof e.line === 'number' ? e.line : undefined,
+        });
+      }
+    }
+
+    for (const d of [
+      ...(knip.dependencies ?? []),
+      ...(knip.devDependencies ?? []),
+      ...(knip.unlisted ?? []),
+    ]) {
+      if (typeof d.name === 'string' && d.name.length > 0) {
+        results.push({ kind: 'dependency', path: 'package.json', name: d.name });
+      }
     }
   }
 

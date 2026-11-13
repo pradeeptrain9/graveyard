@@ -4,7 +4,7 @@
 
 Graveyard scans a JavaScript/TypeScript git repo and shows dead files, unused exports, orphaned dependencies, rotting TODOs and churn hotspots as a haunted graveyard. Every spooky element maps to a real, measured fact. One command safely "exorcises" a grave on a fresh branch for review.
 
-**[Live demo →](https://pradeeptrain9.github.io/graveyard/)**
+**[🌐 Live demo → pradeeptrain9.github.io/graveyard](https://pradeeptrain9.github.io/graveyard/)**
 
 Kiroween 2026 entry, **Costume Contest** category. Built with [Kiro](https://kiro.dev) — see [`.kiro/`](.kiro) for the spec, steering and hooks.
 
