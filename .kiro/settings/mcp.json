@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "graveyard": {
+      "command": "node",
+      "args": ["./engine/dist/mcp.js"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

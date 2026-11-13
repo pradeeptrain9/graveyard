@@ -1,0 +1,13 @@
+{
+  "name": "graveyard-root",
+  "private": true,
+  "workspaces": ["engine", "web"],
+  "scripts": {
+    "build": "npm run build --workspace=engine && npm run build --workspace=web",
+    "test": "npm run test --workspace=engine",
+    "lint": "npm run lint --workspace=engine && npm run lint --workspace=web"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

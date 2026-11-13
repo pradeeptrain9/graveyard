@@ -1,0 +1,33 @@
+{
+  "name": "graveyard-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "graveyard": "./dist/cli.js"
+  },
+  "main": "./dist/schema.js",
+  "exports": {
+    ".": "./dist/schema.js",
+    "./schema": "./dist/schema.js",
+    "./build": "./dist/build.js",
+    "./epitaph": "./dist/epitaph.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "knip": "5.64.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "fast-check": "3.22.0",
+    "typescript": "5.7.2",
+    "vitest": "2.1.9"
+  }
+}
