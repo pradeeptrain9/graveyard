@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Schema guard",
+  "description": "When the graveyard.json schema changes, keep validator, fixtures, demo data and the design doc in sync.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["engine/src/schema.ts"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "engine/src/schema.ts changed. 1) If a field was added, removed or retyped, bump schemaVersion. 2) Update validateGraveyard to match. 3) Update the data model block in .kiro/specs/graveyard/design.md. 4) Regenerate web/public/demo/*.json with `npm run demo -w engine` if it exists, otherwise list which demo files are now stale. 5) Run `npx tsc --noEmit -p web`."
+  }
+}

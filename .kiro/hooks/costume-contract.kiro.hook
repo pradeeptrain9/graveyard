@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Costume contract check",
+  "description": "When UI components change, check every spooky element maps to a real fact and stays accessible.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["web/src/**/*.tsx", "web/src/**/*.css"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the edited UI file against the mapping table in .kiro/steering/product.md. Flag any visual element that does not come from a field in graveyard.json. Check: interactive elements have role/aria-label and keyboard handlers, focus is visible, animation is disabled under prefers-reduced-motion, text contrast is at least 4.5:1 for body text. Fix what you find; keep the change minimal."
+  }
+}

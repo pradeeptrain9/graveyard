@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Refresh demo graveyards",
+  "description": "Manually triggered: rescan the public demo repos and update web/public/demo.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "For each repo listed in web/public/demo/repos.txt: shallow-clone is NOT allowed (history is needed), so do a full `git clone` into a temp dir, run `node engine/dist/cli.js scan <dir> -o web/public/demo/<name>.json`, then delete the temp dir. Report grave/cobweb/haunted counts per repo and any repo that failed."
+  }
+}

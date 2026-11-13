@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Engine tests on save",
+  "description": "When engine source changes, run the related tests (including property tests) and fix failures.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["engine/src/**/*.ts"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "An engine source file was just edited. Run `npm test -w engine -- --run --changed`. If a test fails, fix the source (not the test) unless the test contradicts .kiro/specs/graveyard/requirements.md. For a failing fast-check property, report the shrunk counterexample in your reply before fixing."
+  }
+}
