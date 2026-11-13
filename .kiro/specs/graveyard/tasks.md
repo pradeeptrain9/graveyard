@@ -18,8 +18,8 @@
   - _Requirements: 1.2, 1.4, 4.3_
 
 - [x] 4. Dead code via knip
-  - [ ] 4.1 Capture real knip JSON from 2 public repos into `test/fixtures/`.
-  - [x] 4.2 `adaptKnip()` + unit tests against fixtures.
+  - [x] 4.1 Capture real knip JSON from 2 public repos into `test/fixtures/`. (got + chalk)
+  - [x] 4.2 `adaptKnip()` + unit tests against fixtures; handles both legacy and issues-shape.
   - [x] 4.3 `runKnip()`; on failure throw with stderr.
   - _Requirements: 1.1, 1.5_
 
@@ -36,7 +36,7 @@
 
 - [x] 7. CLI scan
   - [x] 7.1 `graveyard scan` with atomic write and exit codes.
-  - [ ] 7.2 Scan 3 public repos into `web/public/demo/` (checkpoint: inspect output by hand).
+  - [x] 7.2 3 demo graveyards in `web/public/demo/` (got, chalk, socket.io).
   - _Requirements: 1.1, 1.4, 1.5, 7.1_
 
 - [x] 8. Web: data + Ledger
