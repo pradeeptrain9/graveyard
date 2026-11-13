@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "repo": "chalk",
+  "headSha": "a3c0a30f1e3e5e5e5e5e5e5e5e5e5e5e5e5e5e5e",
+  "headDate": "2026-10-15T00:00:00.000Z",
+  "scannedAt": "2026-11-13T11:36:37.690Z",
+  "graves": [
+    {
+      "id": "06849b8824",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "ansi-styles",
+      "born": "2018-01-01T00:00:00.000Z",
+      "lastTouched": "2024-03-01T00:00:00.000Z",
+      "ageDays": 958,
+      "author": "Sindre Sorhus",
+      "lastMessage": "chore: bump to ansi-styles 5",
+      "epitaph": "Here lies ansi-styles. Born January 1, 2018. Last touched March 1, 2024 by Sindre Sorhus: \"chore: bump to ansi-styles 5\". Unvisited 958 days."
+    },
+    {
+      "id": "0121b3cbcf",
+      "kind": "export",
+      "path": "source/index.js",
+      "name": "supportsColor",
+      "line": 44,
+      "born": "2019-02-14T00:00:00.000Z",
+      "lastTouched": "2023-07-22T00:00:00.000Z",
+      "ageDays": 1181,
+      "author": "Sindre Sorhus",
+      "lastMessage": "feat: re-export supportsColor",
+      "epitaph": "Here lies supportsColor. Born February 14, 2019. Last touched July 22, 2023 by Sindre Sorhus: \"feat: re-export supportsColor\". Unvisited 1181 days."
+    },
+    {
+      "id": "e4e5dfd93b",
+      "kind": "export",
+      "path": "source/utilities.js",
+      "name": "stringEncaseCRLFWithFirstIndex",
+      "line": 8,
+      "born": "2020-11-05T00:00:00.000Z",
+      "lastTouched": "2024-02-10T00:00:00.000Z",
+      "ageDays": 978,
+      "author": "Josh Junon",
+      "lastMessage": "perf: internal CRLF helper",
+      "epitaph": "Here lies stringEncaseCRLFWithFirstIndex. Born November 5, 2020. Last touched February 10, 2024 by Josh Junon: \"perf: internal CRLF helper\". Unvisited 978 days."
+    },
+    {
+      "id": "96293d3527",
+      "kind": "file",
+      "path": "source/vendor/ansi-styles-legacy.js",
+      "born": "2018-05-10T00:00:00.000Z",
+      "lastTouched": "2020-03-01T00:00:00.000Z",
+      "ageDays": 2419,
+      "author": "Sindre Sorhus",
+      "lastMessage": "vendor: bundle ansi-styles for CJS",
+      "epitaph": "Here lies source/vendor/ansi-styles-legacy.js. Born May 10, 2018. Last touched March 1, 2020 by Sindre Sorhus: \"vendor: bundle ansi-styles for CJS\". Unvisited 2419 days."
+    }
+  ],
+  "cobwebs": [
+    {
+      "id": "dfcc40ec6a",
+      "path": "source/index.js",
+      "line": 15,
+      "tag": "TODO",
+      "text": "Remove CJS compat layer once Node 14 EOL",
+      "author": "Sindre Sorhus",
+      "ageDays": 920
+    },
+    {
+      "id": "43c0f01771",
+      "path": "source/index.js",
+      "line": 88,
+      "tag": "FIXME",
+      "text": "Level detection is unreliable in multiplexed terminals",
+      "author": "Sindre Sorhus",
+      "ageDays": 480
+    },
+    {
+      "id": "6363c5340d",
+      "path": "source/vendor/ansi-styles-legacy.js",
+      "line": 1,
+      "tag": "TODO",
+      "text": "This whole file should be deleted — vendor copy is dead",
+      "author": "Josh Junon",
+      "ageDays": 1050
+    }
+  ],
+  "haunted": [
+    {
+      "path": "source/index.js",
+      "commits90d": 9,
+      "authors": 2
+    },
+    {
+      "path": "readme.md",
+      "commits90d": 5,
+      "authors": 2
+    }
+  ],
+  "plots": [
+    {
+      "dir": "source",
+      "files": 6,
+      "deadFiles": 2,
+      "fog": 0.33
+    },
+    {
+      "dir": ".",
+      "files": 2,
+      "deadFiles": 0,
+      "fog": 0
+    }
+  ]
+}

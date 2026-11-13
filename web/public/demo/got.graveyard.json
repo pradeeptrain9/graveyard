@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "repo": "got",
+  "headSha": "6b5aafc1cd538998728be6f45c65b0f80bae01b2",
+  "headDate": "2026-10-30T00:00:00.000Z",
+  "scannedAt": "2026-11-13T11:36:37.690Z",
+  "graves": [
+    {
+      "id": "c21e06ddec",
+      "kind": "dependency",
+      "path": "package.json",
+      "name": "@types/cacheable-request",
+      "born": "2019-07-01T00:00:00.000Z",
+      "lastTouched": "2023-11-05T00:00:00.000Z",
+      "ageDays": 1090,
+      "author": "Sindre Sorhus",
+      "lastMessage": "chore: bump deps",
+      "epitaph": "Here lies @types/cacheable-request. Born July 1, 2019. Last touched November 5, 2023 by Sindre Sorhus: \"chore: bump deps\". Unvisited 1090 days."
+    },
+    {
+      "id": "af3e4a7817",
+      "kind": "export",
+      "path": "source/as-promise/create-rejection.ts",
+      "name": "createRejection",
+      "line": 12,
+      "born": "2020-09-03T00:00:00.000Z",
+      "lastTouched": "2024-01-20T00:00:00.000Z",
+      "ageDays": 1014,
+      "author": "Sindre Sorhus",
+      "lastMessage": "fix: rejection helper",
+      "epitaph": "Here lies createRejection. Born September 3, 2020. Last touched January 20, 2024 by Sindre Sorhus: \"fix: rejection helper\". Unvisited 1014 days."
+    },
+    {
+      "id": "e3754410c5",
+      "kind": "file",
+      "path": "source/as-promise/legacy.ts",
+      "born": "2020-03-12T00:00:00.000Z",
+      "lastTouched": "2021-08-04T00:00:00.000Z",
+      "ageDays": 1913,
+      "author": "Sindre Sorhus",
+      "lastMessage": "refactor: move promise logic",
+      "epitaph": "Here lies source/as-promise/legacy.ts. Born March 12, 2020. Last touched August 4, 2021 by Sindre Sorhus: \"refactor: move promise logic\". Unvisited 1913 days."
+    },
+    {
+      "id": "edae652cba",
+      "kind": "export",
+      "path": "source/core/index.ts",
+      "name": "defaultHandlerCount",
+      "line": 88,
+      "born": "2021-04-10T00:00:00.000Z",
+      "lastTouched": "2023-09-20T00:00:00.000Z",
+      "ageDays": 1136,
+      "author": "Sindre Sorhus",
+      "lastMessage": "refactor: handler registry",
+      "epitaph": "Here lies defaultHandlerCount. Born April 10, 2021. Last touched September 20, 2023 by Sindre Sorhus: \"refactor: handler registry\". Unvisited 1136 days."
+    },
+    {
+      "id": "9204c2d9f7",
+      "kind": "file",
+      "path": "source/core/utils/deprecated-options.ts",
+      "born": "2019-11-20T00:00:00.000Z",
+      "lastTouched": "2022-01-15T00:00:00.000Z",
+      "ageDays": 1749,
+      "author": "Szabolcs Dávid",
+      "lastMessage": "feat: add v12 options shim",
+      "epitaph": "Here lies source/core/utils/deprecated-options.ts. Born November 20, 2019. Last touched January 15, 2022 by Szabolcs Dávid: \"feat: add v12 options shim\". Unvisited 1749 days."
+    },
+    {
+      "id": "815a14394c",
+      "kind": "export",
+      "path": "source/types.ts",
+      "name": "GotReturnType",
+      "line": 150,
+      "born": "2020-06-01T00:00:00.000Z",
+      "lastTouched": "2022-06-30T00:00:00.000Z",
+      "ageDays": 1583,
+      "author": "Sindre Sorhus",
+      "lastMessage": "types: add GotReturnType alias",
+      "epitaph": "Here lies GotReturnType. Born June 1, 2020. Last touched June 30, 2022 by Sindre Sorhus: \"types: add GotReturnType alias\". Unvisited 1583 days."
+    },
+    {
+      "id": "5f5d5ad017",
+      "kind": "export",
+      "path": "source/types.ts",
+      "name": "GotStream",
+      "line": 192,
+      "born": "2020-06-01T00:00:00.000Z",
+      "lastTouched": "2023-02-11T00:00:00.000Z",
+      "ageDays": 1357,
+      "author": "Szabolcs Dávid",
+      "lastMessage": "types: export GotStream",
+      "epitaph": "Here lies GotStream. Born June 1, 2020. Last touched February 11, 2023 by Szabolcs Dávid: \"types: export GotStream\". Unvisited 1357 days."
+    }
+  ],
+  "cobwebs": [
+    {
+      "id": "d5ac383b90",
+      "path": "source/as-promise/index.ts",
+      "line": 77,
+      "tag": "HACK",
+      "text": "Force-cast because typings for cacheable-request are wrong",
+      "author": "Sindre Sorhus",
+      "ageDays": 710
+    },
+    {
+      "id": "b00cfeb0d1",
+      "path": "source/as-promise/legacy.ts",
+      "line": 3,
+      "tag": "TODO",
+      "text": "Delete this whole file — it is dead",
+      "author": "Sindre Sorhus",
+      "ageDays": 980
+    },
+    {
+      "id": "58f7051a46",
+      "path": "source/core/index.ts",
+      "line": 42,
+      "tag": "TODO",
+      "text": "Remove when Node 16 drops — use native AbortSignal",
+      "author": "Sindre Sorhus",
+      "ageDays": 820
+    },
+    {
+      "id": "7412f5d85a",
+      "path": "source/core/index.ts",
+      "line": 198,
+      "tag": "FIXME",
+      "text": "Race condition when stream is destroyed before connect",
+      "author": "Szabolcs Dávid",
+      "ageDays": 644
+    },
+    {
+      "id": "12870c3faf",
+      "path": "source/core/index.ts",
+      "line": 311,
+      "tag": "FIXME",
+      "text": "maxRedirects should count per-origin, not globally",
+      "author": "Szabolcs Dávid",
+      "ageDays": 735
+    },
+    {
+      "id": "6dc323292c",
+      "path": "source/core/utils/timed-out.ts",
+      "line": 15,
+      "tag": "TODO",
+      "text": "Align with Fetch timeout semantics once spec finalises",
+      "author": "Sindre Sorhus",
+      "ageDays": 580
+    },
+    {
+      "id": "f8fcbc6328",
+      "path": "test/helpers/server.ts",
+      "line": 88,
+      "tag": "TODO",
+      "text": "Replace with @hapi/lab when it supports ESM",
+      "author": "Sindre Sorhus",
+      "ageDays": 601
+    }
+  ],
+  "haunted": [
+    {
+      "path": "source/core/index.ts",
+      "commits90d": 28,
+      "authors": 3
+    },
+    {
+      "path": "source/as-promise/index.ts",
+      "commits90d": 17,
+      "authors": 2
+    },
+    {
+      "path": "test/got.ts",
+      "commits90d": 14,
+      "authors": 2
+    },
+    {
+      "path": "source/core/options.ts",
+      "commits90d": 11,
+      "authors": 2
+    }
+  ],
+  "plots": [
+    {
+      "dir": "source",
+      "files": 24,
+      "deadFiles": 2,
+      "fog": 0.08
+    },
+    {
+      "dir": "test",
+      "files": 18,
+      "deadFiles": 0,
+      "fog": 0
+    }
+  ]
+}
