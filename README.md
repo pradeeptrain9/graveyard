@@ -133,6 +133,18 @@ repo ──► engine (git + knip facts) ──► buildGraveyard() ──► gr
 
 ---
 
+## Claude Code skill
+
+[`skills/graveyard/SKILL.md`](skills/graveyard/SKILL.md) teaches Claude Code to run Graveyard on any JS/TS repo: install deps, scan, separate trustworthy findings from likely false positives, and exorcise a grave safely on a new branch. It fetches and builds the engine into `~/.graveyard` on first use (override with `GRAVEYARD_HOME`).
+
+```bash
+mkdir -p ~/.claude/skills/graveyard && curl -fsSL https://raw.githubusercontent.com/pradeeptrain9/graveyard/main/skills/graveyard/SKILL.md -o ~/.claude/skills/graveyard/SKILL.md
+```
+
+Then ask Claude: *"find dead code in https://github.com/expressjs/express"* or run `/graveyard`.
+
+---
+
 ## Built on
 
 - [knip](https://github.com/webpro-nl/knip) (ISC) — dead file/export/dependency detection. Graveyard adds git history, epitaphs, cobwebs, churn, the cemetery UI, safe exorcism and an MCP server on top.
