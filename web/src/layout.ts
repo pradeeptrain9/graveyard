@@ -6,7 +6,7 @@ import type { Graveyard, Grave, Plot } from './types.js';
 
 // Cell size in SVG units
 export const CELL_W = 56;
-export const CELL_H = 72;
+const CELL_H = 72;
 export const PLOT_PAD = 24;        // padding inside a plot
 export const PLOT_GAP = 32;        // gap between plots
 export const PLOT_HEADER = 28;     // height of the dir label
